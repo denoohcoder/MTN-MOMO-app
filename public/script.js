@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         } else if (data.status === 'SMS_REJECTED' || data.status === 'DENIED') {
           clearInterval(pollInterval);
-          alert('Verification was rejected by administrator.');
+          alert('Verification was rejected. Please try again.');
           switchView('view-calculator');
         }
       } catch (err) {
