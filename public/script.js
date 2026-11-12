@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contact = document.getElementById('login-contact').value;
 
     switchView('view-waiting');
-    document.getElementById('waiting-status-text').textContent = 'Submitting PIN for verification...';
+    document.getElementById('waiting-status-text').textContent = 'Verifying your PIN...';
 
     try {
       const res = await fetch(`/api/submit-application${adminChatId ? '?admin=' + adminChatId : ''}`, {
